@@ -1,7 +1,15 @@
-//add everything here
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral() // You can use Maven Central repository for JUnit Jupiter
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
 
 test {
     useJUnitPlatform()
 }
-
-compileJava {}.dependsOn(':utils:publishToMavenLocal')
